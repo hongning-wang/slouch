@@ -1,0 +1,25 @@
+{
+  "name": "slouch",
+  "version": "1.0.0",
+  "description": "A local camera posture reminder",
+  "private": true,
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "start": "node server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "test:browser": "playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@mediapipe/tasks-vision": "1.1.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.0"
+  }
+}

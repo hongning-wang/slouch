@@ -1,0 +1,5 @@
+node_modules/
+public/model.task
+test-results/
+playwright-report/
+.DS_Store

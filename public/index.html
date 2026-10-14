@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Slouch</title>
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <main>
+    <header><h1>Slouch</h1><span id="state">Off</span></header>
+    <div class="camera" id="camera-panel">
+      <video id="camera" autoplay muted playsinline aria-label="Camera preview"></video>
+      <canvas id="overlay" aria-hidden="true"></canvas>
+      <p id="placeholder">Your camera stays on your device.</p>
+      <video id="alert-video" muted playsinline hidden aria-label="Posture reminder video"></video>
+    </div>
+    <p id="message" role="status" aria-live="polite">Loading…</p>
+    <div class="controls">
+      <button id="start" disabled>Start</button>
+      <button id="calibrate" class="secondary" hidden>Recalibrate</button>
+    </div>
+  </main>
+</body>
+</html>
